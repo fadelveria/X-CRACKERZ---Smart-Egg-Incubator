@@ -1,7 +1,7 @@
 /* Navigation.css */
 
 .navigation {
-  background-color: #343a40;
+  background-color: #132a13;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -51,7 +51,7 @@
 }
 
 .nav-links a.active {
-  background-color: #007bff;
+  background-color: #4F772D;
 }
 
 .connection-status {
