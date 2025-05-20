@@ -1,0 +1,109 @@
+/* Navigation.css */
+
+.navigation {
+  background-color: #343a40;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.nav-brand h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  background-color: #007bff;
+}
+
+.connection-status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.connection-status::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.connection-status.connected {
+  background-color: rgba(40, 167, 69, 0.2);
+  color: #5ad162;
+}
+
+.connection-status.connected::before {
+  background-color: #28a745;
+}
+
+.connection-status.disconnected {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: #ff8086;
+}
+
+.connection-status.disconnected::before {
+  background-color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .nav-brand {
+    margin-bottom: 10px;
+  }
+  
+  .nav-links {
+    margin: 10px 0;
+  }
+  
+  .connection-status {
+    margin-top: 10px;
+  }
+}

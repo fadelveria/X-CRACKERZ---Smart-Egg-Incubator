@@ -1,0 +1,91 @@
+/* History.css */
+
+.history {
+  padding: 20px 0;
+}
+
+.history h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-controls button {
+  margin: 0 5px;
+  padding: 8px 15px;
+}
+
+.readings-table-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.readings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.readings-table th,
+.readings-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.readings-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.readings-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.reading-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.reading-type.temperature {
+  background-color: rgba(255, 99, 132, 0.1);
+  color: #ff6384;
+}
+
+.reading-type.humidity {
+  background-color: rgba(54, 162, 235, 0.1);
+  color: #36a2eb;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .filter-controls {
+    flex-wrap: wrap;
+  }
+  
+  .filter-controls button {
+    margin: 5px;
+  }
+  
+  .readings-table th,
+  .readings-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}

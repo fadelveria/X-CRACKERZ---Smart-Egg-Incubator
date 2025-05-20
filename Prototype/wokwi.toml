@@ -1,0 +1,10 @@
+[wokwi]
+version = 1
+elf = ".pio/build/esp32dev/firmware.elf"
+firmware = ".pio/build/esp32dev/firmware.bin"
+
+# Forward MQTT to the local machine, useful for debugging
+# and connecting to the MQTT broker from outside the simulator
+# [[net.forward]]
+# from = "mqtt:// 0.0.0.0:1883"
+# to = "mqtt://test.mosquitto.org:1883"
