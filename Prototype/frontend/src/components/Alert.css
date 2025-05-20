@@ -113,7 +113,7 @@
   width: 100%;
   padding: 12px;
   border: none;
-  background-color: #007bff;
+  background-color: #31572C;
   color: white;
   font-size: 14px;
   cursor: pointer;
@@ -121,7 +121,7 @@
 }
 
 .resolve-btn:hover {
-  background-color: #0069d9;
+  background-color:rgb(34, 61, 31);
 }
 
 .alert-card.mild {
